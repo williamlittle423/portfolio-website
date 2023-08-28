@@ -23,7 +23,12 @@ const Home = () => {
                 Colin Cockburn
                 </h1>
                 <p className='Exo pl-1'> 
-                 a full-stack developer currently pursuing a computer science degree with a focus in artificial intelligence at Queen's University. With a strong passion for technology and a focused commitment to honing my programming skills, I am dedicated to exploring the dynamic world of software development and creating innovative solutions.
+                I am a full-stack developer currently pursuing a computer 
+                science degree with a focus in artificial intelligence at 
+                Queen's University. With a strong passion for technology and 
+                a focused commitment to honing my programming skills, I am 
+                dedicated to exploring the dynamic world of software 
+                development and creating innovative solutions.
                 </p>
               </div>
             </div>

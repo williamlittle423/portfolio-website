@@ -1,113 +1,71 @@
-import Image from 'next/image'
+import NavigationBar from './components/NavigationBar';
+import Project from './components/Project';
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    //root
+    <div className='flex flex-col justify-center items-center bg-neutral-900 p-[3vw]'>
+      {/* hero */}
+      <div className=" text-white h-screen w-full flex flex-col justify-between pb-[4vw]">
+        {/* Navbar */}
+        <NavigationBar />
+        
+        {/* Outer Wrapper */}
+        <div className="flex flex-row justify-center ">
+          {/* First Child */}
+          <div className="w-full px-[2vw] md:mr-10 md:w-3/4 xl:w-1/2">
+            <p className='mono text-orange-300'>hello world! my name is</p>
+            <div className='border-l-2 border-blue-700 pl-2'>
+              <div>
+                <h1 
+                  className='Exo text-4xl sm:text-7xl'
+                >
+                Colin Cockburn
+                </h1>
+                <p className='Exo pl-1'> 
+                I'm a full-stack developer currently pursuing a computer science degree with a focus in artificial intelligence at Queen's University. With a strong passion for technology and a focused commitment to honing my programming skills, I am dedicated to exploring the dynamic world of software development and creating innovative solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+        <div className='flex  justify-center'>
+          <div className='Exo flex-shrink text-xl border-b-2 border-blue-700 '>Projects
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      {/* projects */}
+      <div className='flex flex-col xl:w-4/5'>
+        <Project 
+            title={"Host | Unity, C#"}
+            description={"Host is a fast paced 2D platformer currently in development using Unity game engine. the goal of the game is to go from start to finish while overcoming obstacles and enemies stronger than the player. The twist is that you have the ability to take control of the enemies, and use them against each other. The core game mechanics of the game are complete, and the game is currently in the process of being polished and refined. In this demo video, I showcase the mechanics of the game, and the progress I've made so far."}
+            videoLink={"https://www.youtube.com/embed/S7Hy0AoY2SM?si=8waAf4gv1g0IqNPp"}
+            videoTitle={"Host Demo"}
+            gitHubLink = {"https://github.com/CISC-226-W23/226-game-design-project-gdpb3"}
+          />
+        <Project 
+          title={"Chess Engine | C++, SFML"}
+          description={"A chess engine built from the ground up using C++, enhanced by the graphical and interactive capabilities of the SFML framework. The engine contains a AI you can play against, which proves to be a challenging adversary. The AI is built around a min max alogorithm with alpha beta pruning for efficieny. Using material value and positioning for evaluation, the AI is caple of playing well above the average chess player."}
+          videoLink={"https://www.youtube.com/embed/cqcyE2_q9Hw?si=lBC8W4tHwb3yQKYT"}
+          videoTitle={"Chess Engine Demo"}
+          gitHubLink = {"https://github.com/colincockburn/chess-engine"}
+        />
+          <Project 
+          title={"Wordle Calculator | Python, Tkinter"}
+          description={"A python program that takes in a user's guess and coloured result for said guess, and calculates next best options. The calculator sorts possible guesses based on the average information entropy each guess will provide as well as the frequncy of usage in the english language. You can find a demo of the calculator on a few previous wordle games here, and after recreating wordle in python for testing, it scores a average of 3.65 attempts all 2315 possible games of wordle."}
+          videoLink={"https://www.youtube.com/embed/OOmZ5D4Vdbo?si=ZurXf8ee1KRASEEF"}
+          videoTitle={"Chess Engine Demo"}
+          gitHubLink = {"https://github.com/colincockburn/Wordle-solver"}
+        />
+          <Project 
+          title={"Airbnb Clone | python, SQLAlchemy"}
+          description={"I had the privilege of leading a collaborative team project that revolved around the development of a command-line interface (CLI) application using Python and SQLAlchemy. Our primary goal was to replicate the back-end functionality akin to that of Airbnb's platform. This encompassed an array of intricate features, including comprehensive user authentication, property listings, booking management, and database managment."}
+          gitHubLink = {"https://github.com/colincockburn/qbnb"}
         />
       </div>
+    </div>
+  );
+};
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default Home;

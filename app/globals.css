@@ -2,7 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-brightness {
+  filter: brightness(0);
+}
+
+/* styles.css (or your preferred CSS file) */
 :root {
+  --universal-color: rgb(120, 120, 120); /* You can change this color value */
+}
+
+@font-face {
+  font-family: 'Exo'; /* Choose a name for your font */
+  src: url('./fonts/Exo_2/Exo2-VariableFont_wght.ttf') format('woff2'),
+       url('./fonts/Exo_2/Exo2-VariableFont_wght.ttf') format('woff');
+  /* Add additional formats as needed */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mono'; /* Choose a name for your font */
+  src: url('./fonts/Space_Mono/SpaceMono-Regular.ttf') format('woff2'),
+       url('./fonts/Space_Mono/SpaceMono-Regular.ttf') format('woff');
+  /* Add additional formats as needed */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Default CSS for the component */
+body {
+  font-family: Arial, sans-serif, 'Montserrat';
+}
+
+.container {
+  background-color: #333;
+  color: #fff;
+  flex: auto;
+  width: 100vw;
+
+}
+
+.navbar {
+  background-color: #444;
+  
+}
+
+.content {
+  background-color: #555;
+
+
+}
+
+.left-panel {
+  background-color: #555;
+}
+
+.right-panel {
+  background-color: #666;
+}
+
+.Exo {
+  font-family: 'Exo', sans-serif;
+}
+
+.mono {
+  font-family: 'mono' , sans-serif;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -15,13 +83,4 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+ */

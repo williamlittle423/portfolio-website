@@ -51,7 +51,7 @@ const Home = () => {
           />
         <Project 
           title={"Chess Engine | C++, SFML"}
-          description={"A chess engine built from the ground up using C++, enhanced by the graphical and interactive capabilities of the SFML framework. The engine contains a AI you can play against, which proves to be a challenging adversary. The AI is built around a min max alogorithm with alpha beta pruning for efficieny. Using material value and positioning for evaluation, the AI is caple of playing well above the average chess player."}
+          description={"A chess engine built from the ground up using C++, enhanced by the graphical and interactive capabilities of the SFML framework. The engine contains a AI for the user to play against. The AI is built around a min max alogorithm with alpha beta pruning for efficieny. Using material value and positioning for evaluation, the AI is caple of playing well above the average chess player."}
           videoLink={"https://www.youtube.com/embed/cqcyE2_q9Hw?si=lBC8W4tHwb3yQKYT"}
           videoTitle={"Chess Engine Demo"}
           gitHubLink = {"https://github.com/colincockburn/chess-engine"}

@@ -8,7 +8,7 @@ const Project = (props) => {
     let videoContainer
     if (videoLink != null){
         videoContainer =           
-        <div className='w-4/5 relative lg:w-1/2'>
+        <div className='w-full relative lg:w-1/2'>
         <div style={{ paddingBottom: '56.25%' }} className='h-0'>
         <iframe 
             className='rounded-lg absolute top-0 left-0 w-full h-full'

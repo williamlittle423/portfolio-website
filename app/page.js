@@ -6,7 +6,7 @@ const Home = () => {
     //root
     <div className='flex flex-col justify-center items-center bg-neutral-900 p-[3vw]'>
       {/* hero */}
-      <div className=" text-white h-screen w-full flex flex-col justify-between pb-[4vw]">
+      <div className=" text-white h-[90vh] sm:h-screen w-full flex flex-col justify-between pb-[4vw]">
         {/* Navbar */}
         <NavigationBar />
         

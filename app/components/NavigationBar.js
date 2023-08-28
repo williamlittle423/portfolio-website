@@ -25,7 +25,7 @@ const NavigationBar = () => {
         <div className='filter brightness-50 transform scale-100 hover:scale-110 transition-all duration-200 hover:brightness-75 h-[2.3rem] w-[3.5rem]'>
           {/* email */}
           <a
-          href={"mailto:colincockburn64@gmail.com"} // Set the href to the mailto: link
+          href={"mailto:colin@thecockburns.com"} // Set the href to the mailto: link
           className=""
           style={{ cursor: 'pointer' }} // Change cursor to indicate it's clickable
           >

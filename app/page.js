@@ -58,7 +58,7 @@ const Home = () => {
         />
           <Project 
           title={"Wordle Calculator | Python, Tkinter"}
-          description={"A python program that takes in a user's guess and coloured result for said guess, and calculates next best options. The calculator sorts possible guesses based on the average information entropy each guess will provide as well as the frequncy of usage in the english language. You can find a demo of the calculator on a few previous wordle games here, and after recreating wordle in python for testing, it scores a average of 3.65 attempts all 2315 possible games of wordle."}
+          description={"A python program that takes in a user's guess and coloured result for said guess, and calculates next best options. The calculator sorts possible guesses based on the average information entropy each guess will provide as well as the frequncy of usage in the english language. You can find a demo of the calculator on a few previous wordle games here, and after recreating wordle in python for testing, it scores a average of 3.65 attempts on all 2315 possible games of wordle."}
           videoLink={"https://www.youtube.com/embed/OOmZ5D4Vdbo?si=ZurXf8ee1KRASEEF"}
           videoTitle={"Chess Engine Demo"}
           gitHubLink = {"https://github.com/colincockburn/Wordle-solver"}

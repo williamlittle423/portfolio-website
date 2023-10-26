@@ -1,12 +1,14 @@
 import NavigationBar from './components/NavigationBar';
 import Project from './components/Project';
 
+
+
 const Home = () => {
   return (
     //root
-    <div className='flex flex-col justify-center items-center bg-neutral-900 p-[3vw]'>
+    <div className='flex flex-col justify-center items-center bg-neutral-900 p-[3vw] '>
       {/* hero */}
-      <div className=" text-white h-[85vh] sm:h-screen w-full flex flex-col justify-between pb-[4vw]">
+      <div className=" text-[#d4d4d4] font-medium h-[85vh] sm:h-screen w-full flex flex-col justify-between pb-[4vw]">
         {/* Navbar */}
         <NavigationBar />
         
@@ -14,21 +16,18 @@ const Home = () => {
         <div className="flex flex-row justify-center ">
           {/* First Child */}
           <div className="w-full px-[2vw] md:mr-10 md:w-3/4 xl:w-1/2">
-            <p className='mono text-orange-300'>hello world! my name is</p>
-            <div className='border-l-2 border-blue-700 pl-2'>
+            <p className='mono text-[#48b8a0]'>hello world! my name is</p>
+            <div className='border-l-2 border-[#48b8a0] pl-2'>
               <div>
                 <h1 
-                  className='Exo text-4xl sm:text-7xl'
+                  className='Exo text-4xl sm:text-7xl text-[#ededed] font-black'
                 >
                 Colin Cockburn
                 </h1>
                 <p className='Exo pl-1'> 
                 I am a software developer currently pursuing a computer 
                 science degree with a focus in artificial intelligence at 
-                Queen's University. With a strong passion for technology and 
-                a focused commitment to honing my programming skills, I am 
-                dedicated to exploring the dynamic world of software 
-                development and creating innovative solutions.
+                Queen's University. As I further my studies, I am currently on the lookout for internship opportunities to gain more practical experience and learn from the field.
                 </p>
               </div>
             </div>
@@ -36,7 +35,7 @@ const Home = () => {
      
         </div>
         <div className='flex  justify-center'>
-          <div className='Exo flex-shrink text-xl border-b-2 border-blue-700 '>Projects
+          <div className='Exo flex-shrink text-xl border-b font-medium text-[#48b8a0] border-[#48b8a0] '>Projects
           </div>
         </div>
       </div>

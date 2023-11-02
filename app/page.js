@@ -46,7 +46,7 @@ const Home = () => {
             description={"Host is a fast paced 2D platformer currently in development using Unity game engine. the goal of the game is to go from start to finish while overcoming obstacles and enemies stronger than the player. The twist is that you have the ability to take control of the enemies, and use them against each other. The core game mechanics of the game are complete, and the game is currently in the process of being polished and refined. In this demo video, I showcase the mechanics of the game, and the progress I've made so far."}
             videoLink={"https://www.youtube.com/embed/S7Hy0AoY2SM?si=8waAf4gv1g0IqNPp"}
             videoTitle={"Host Demo"}
-            gitHubLink = {"https://github.com/CISC-226-W23/226-game-design-project-gdpb3"}
+            gitHubLink = {"https://github.com/colincockburn/Host"}
           />
         <Project 
           title={"Chess Engine | C++, SFML"}

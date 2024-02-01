@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const Project = (props) => {
 
-    const {title, description, videoLink, videoTitle, gitHubLink} = props;
+    const {title, description, videoLink, videoTitle, gitHubLink, photoLink} = props;
 
-    let videoContainer
+    let mediaContainer;
     if (videoLink != null){
-        videoContainer =           
+        mediaContainer =           
         <div className='w-full md:w-4/5 relative lg:w-1/2'>
         <div style={{ paddingBottom: '56.25%' }} className='h-0'>
         <iframe 
@@ -21,11 +21,27 @@ const Project = (props) => {
         </iframe>
         </div>
     </div>
-    } else {
-        videoContainer = null;
-    }
+    } else if (photoLink != null) {
+        mediaContainer = 
+        <div className='w-full md:w-4/5 relative lg:w-1/2 bg-white rounded-lg overflow-hidden'>
+            <div className="rounded-lg">
+                <div style={{ paddingBottom: '56.25%' }} className='h-0 relative overflow-hidden rounded-lg'>
+                    <Image
+                        src={photoLink}
+                        layout='fill'
+                        objectFit='contain'
+                        className='rounded-xl' 
+                    />
+                </div>
+            </div>
+        </div>
 
-    const paragraphWidth = videoLink != null ? 'lg:w-1/2' : '';
+
+
+    } else {
+        mediaContainer = null;
+    }
+    const paragraphWidth = videoLink != null || photoLink != null ? 'lg:w-1/2' : '';
     
     return (
     <div className='Exo bg-neutral-800 w-9/10 mx-auto rounded-xl text-white shadow-md shadow-black p-[2rem] mb-[2rem] '>
@@ -49,7 +65,7 @@ const Project = (props) => {
             </div>
         </div>
         <div className='flex flex-col-reverse items-center justify-between lg:flex-row lg:items-start'>
-            {videoContainer}
+            {mediaContainer}
             <div className={'lg:ml-[2rem] lg:mb-0 mb-[1rem] ' + paragraphWidth}>
                 {/* Second item */}
                 <p className=' text-[#d4d4d4] border-l-2 border-[#48b8a0] px-[0.7rem] font-medium'>

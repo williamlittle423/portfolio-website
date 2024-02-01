@@ -41,13 +41,19 @@ const Home = () => {
       </div>
       {/* projects */}
       <div className='flex flex-col xl:w-4/5'>
+        <Project  
+            title={"Depth Map AI | Python, TensorFlow"}
+            description={"Currently leading 4 team members in the development of a depth map model with a U-Net convolutional neural network using python. TensorFlow, Keras, Opencv, Matplotlib, and numPy. The  overall goal of the team is to use my depth map and a existing object classification network to apply computer vision functionality to a VEX competition robotics project. Our model achitecure uses Keras pretrained DenseNet201 for encoding and a custom decoder for decoding. The model is currently trained on the DIODE dataset, and and will soon be trained on both DIODE and a custom made dataset using a RealSense camera and a VEX demo field. We will be writing a paper on our work, creating a demo of its funcionality, and presenting it at CUCAI 2024. My most recent progress with the model is shown here."}
+            photoLink={"/model_results.png"}
+            gitHubLink = {"https://github.com/theol0403/QMIND-CV-Robot-Vision"}
+        />
         <Project 
             title={"Host | Unity, C#"}
             description={"Host is a fast paced 2D platformer currently in development using Unity game engine. the goal of the game is to go from start to finish while overcoming obstacles and enemies stronger than the player. The twist is that you have the ability to take control of the enemies, and use them against each other. The core game mechanics of the game are complete, and the game is currently in the process of being polished and refined. In this demo video, I showcase the mechanics of the game, and the progress I've made so far."}
             videoLink={"https://www.youtube.com/embed/S7Hy0AoY2SM?si=8waAf4gv1g0IqNPp"}
             videoTitle={"Host Demo"}
             gitHubLink = {"https://github.com/colincockburn/Host"}
-          />
+        />
         <Project 
           title={"Chess Engine | C++, SFML"}
           description={"A chess engine built from the ground up using C++, enhanced by the graphical and interactive capabilities of the SFML framework. The engine contains a AI for the user to play against. The AI is built around a min max alogorithm with alpha beta pruning for efficieny. Using material value and positioning for evaluation, the AI is caple of playing well above the average chess player."}

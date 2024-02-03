@@ -1,0 +1,7 @@
+/* custom.css */
+.gradient-border {
+  background: linear-gradient(to right, #5D59FF, #F19696, #EC54DD);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #5D59FF, #F19696, #EC54DD);
+  border-image-slice: 1;
+}

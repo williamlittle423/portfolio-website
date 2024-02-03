@@ -9,7 +9,7 @@ const NavigationBar = () => {
       
       {/* Resume Button */}
       <div className="filter brightness-50 transform scale-75 hover:scale-95 transition-all duration-200 hover:brightness-75 h-[2.5rem] w-[2.5rem]">
-        <a href="https://docs.google.com/document/d/e/2PACX-1vSSq41dF1lQ2nIZ0OLSirYSniLdIBObDSuqJKbhC-eriobRoN4etPUcC7lph-DYl1yazDgWWBwudgf-/pub"
+        <a href="https://www.flipsnack.com/A9DB8E88B7A/william-little-resume/full-view.html"
           target="_blank" 
           rel="noopener noreferrer">
           <Image

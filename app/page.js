@@ -26,7 +26,7 @@ const Home = () => {
                 
                 <p className='Inter font-light pl-1'> 
                 I am a passionate software engineer, tech founder, and product designer currently pursuing an engineering physics degree with a focus in computing applications at 
-                Queen's University. I am activetly seeking a summer internship a in software engineering, data science, or applied physics role.
+                Queen's University. I am actively seeking a 2024 summer internship in software engineering, data science, or applied physics role.
                 </p>
               </div>
             </div>
